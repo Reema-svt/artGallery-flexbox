@@ -1,0 +1,46 @@
+.row-one,
+.row-two {
+  display: flex;
+  justify-content: space-between;
+}
+.row-two {
+  flex-direction: row-reverse;
+}
+.dog {
+  background-color: #f9f5f6;
+  height: 250px;
+  width: 400px;
+  padding: 10px;
+}
+.dogBreed {
+  font-family: "Titillium Web", sans-serif;
+  font-size: x-large;
+  text-align: center;
+}
+.dogAbout {
+  text-align: justify;
+  font-size: medium;
+  font-family: "Satisfy", cursive;
+}
+.dogImg {
+  height: 250px;
+  width: 400px;
+  padding: 10px;
+}
+a:hover {
+  background-color: #f8e8ee;
+}
+
+@media (max-width: 600px) {
+  .row-one,
+  .row-two {
+    flex-direction: column;
+  }
+
+  .dog,
+  .dogImg {
+    height: 300px;
+    width: 300px;
+    padding: 0;
+  }
+}
